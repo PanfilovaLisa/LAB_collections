@@ -59,7 +59,7 @@ class HonkGoose(Goose):
         self.honk_volume = Honk_volume
     
 
-    def __call__(self, player):
+    def __call__(self):
         login = f"-----Вызван гусь {self.goose_id}-----"
         print(login)
         log.log_in(login)
