@@ -30,5 +30,9 @@ class PlayerCollection:
         return self._person[ind]
 
 
+    def __contains__(self, el):
+        return el in self._person
+
+
     def __str__(self):
         return str(self._person)

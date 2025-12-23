@@ -34,5 +34,9 @@ class GooseCollection:
         return self._geese[ind]
 
 
+    def __contains__(self, el):
+        return el in self._geese
+
+
     def __str__(self):
         return str(self._geese)
