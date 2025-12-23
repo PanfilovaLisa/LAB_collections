@@ -1,0 +1,2 @@
+PLAYER_ID = 1
+GOOSE_ID = 1

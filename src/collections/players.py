@@ -1,10 +1,4 @@
-import casinobuild
-
-def new_player(func):
-    pass
-
-
-
+from src import const
 
 class PlayerCollection:
     def __init__(self):
@@ -12,6 +6,7 @@ class PlayerCollection:
 
     
     def append(self, el):
+        const.PLAYER_ID+=1
         return self._person.append(el)
     
 
@@ -37,16 +32,3 @@ class PlayerCollection:
 
     def __str__(self):
         return str(self._person)
-
-
-class Player:
-
-    def __init__(self, balance):
-        print(self)
-        self.balance = balance
-
-
-
-
-Player1 = Player(balance=1000)
-Player1.balance+=50
